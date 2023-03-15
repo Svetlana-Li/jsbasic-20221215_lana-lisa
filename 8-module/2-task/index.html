@@ -80,6 +80,9 @@
     });
 
     let categoryControl = document.querySelector('[data-category]');
+    if (categoryControl.checked) {
+      productGrid.updateFilter({ category: 'soups' });
+    }
     categoryControl.addEventListener('change', () => {
       if (event.target.checked) {
         productGrid.updateFilter({ category: 'soups' });

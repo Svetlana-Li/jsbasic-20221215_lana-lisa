@@ -39,9 +39,6 @@ export default class CartIcon {
   }
 
   updatePosition() {
-    let cartTop = this.elem.getBoundingClientRect().top + window.pageYOffset
-    
-
     if (document.documentElement.clientWidth > 767) {
       if (window.pageYOffset > 50) {
         let leftIndent = Math.min(
